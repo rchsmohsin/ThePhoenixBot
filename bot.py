@@ -2,7 +2,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 def start(bot, update):
-  update.message.reply_text("I'm a bot, Nice to meet you!")
+  update.message.reply_text("I'm ThePhoenixBot, the (not so) official bot of the Phoenix Programing Club at RCHS. What's your name?")
   
 def convert_uppercase(bot, update):
   update.message.reply_text(update.message.text.upper())
