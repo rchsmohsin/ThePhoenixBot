@@ -1,60 +1,29 @@
-# -*- coding: utf-8 -*-
-import redis
-import os
-import telebot
-import json 
-import requests
+# - *- coding: utf- 8 - *-
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-# import some_api_lib
-# import ...
+def start(bot, update):
+  update.message.reply_text("I'm a bot, Nice to meet you!")
+  
+def convert_uppercase(bot, update):
+  update.message.reply_text(update.message.text.upper())
 
-# Example of your code beginning
-#           Config vars
-token = os.environ['TELEGRAM_TOKEN']
-some_api_token = os.environ['SOME_API_TOKEN']
-#             ...
+def main():
+  # Create Updater object and attach dispatcher to it
+  updater = Updater("527981021:AAEzcXCaC7awXaZzOGaI4MolJPqsET_huNU")
+  dispatcher = updater.dispatcher
+  print("Bot started")
 
-# If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
-r = redis.from_url(os.environ.get("REDIS_URL"))
+  # Add command handler to dispatcher
+  start_handler = CommandHandler('start',start)
+  upper_case = MessageHandler(Filters.text, convert_uppercase)
+  dispatcher.add_handler(start_handler)
+  dispatcher.add_handler(upper_case)
 
-#       Your bot code below
-# bot = telebot.TeleBot(token)
-# some_api = some_api_lib.connect(some_api_token)
-#              ...
+  # Start the bot
+  updater.start_polling()
 
+  # Run the bot until you press Ctrl-C
+  updater.idle()
 
-
-
-def get_url(url):
-    response = requests.get(url)
-    content = response.content.decode("utf8")
-    return content
-
-
-def get_json_from_url(url):
-    content = get_url(url)
-    js = json.loads(content)
-    return js
-
-
-def get_updates():
-    url = URL + "getUpdates"
-    js = get_json_from_url(url)
-    return js
-
-
-def get_last_chat_id_and_text(updates):
-    num_updates = len(updates["result"])
-    last_update = num_updates - 1
-    text = updates["result"][last_update]["message"]["text"]
-    chat_id = updates["result"][last_update]["message"]["chat"]["id"]
-    return (text, chat_id)
-
-
-def send_message(text, chat_id):
-    url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
-    get_url(url)
-    
-
-text, chat = get_last_chat_id_and_text(get_updates())
-send_message(text, chat)
+if __name__ == '__main__':
+  main()
