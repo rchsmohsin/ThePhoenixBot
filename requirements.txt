@@ -2,6 +2,6 @@
 
 
 
-json
-requests
+json = "*"
+requests = "*"
 
