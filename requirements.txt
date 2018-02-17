@@ -1,7 +1,2 @@
 # List of required packages (Dependencies)
-
-
-
-json = "*"
-requests = "*"
-
+requests
