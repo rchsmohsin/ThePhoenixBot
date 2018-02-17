@@ -1,7 +1,7 @@
 # List of required packages (Dependencies)
 redis
-os
-telebot
+
+
 json
 requests
 
