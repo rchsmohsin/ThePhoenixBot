@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 def start(bot, update):
   update.message.reply_text("I'm ThePhoenixBot, the (not so) official bot of the Phoenix Programing Club at RCHS. What's your name?")
   
-def start(bot, update):
+def dank(bot, update):
   update.message.reply_text("when you dank so hard but you don't succeed")
   
 def convert_uppercase(bot, update):
