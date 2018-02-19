@@ -5,7 +5,7 @@ Make an account on here if you'd like to host a bot yourself.
 ## Deploying via [Heroku Toolbelt](https://toolbelt.heroku.com/) (CLI)
 Install [Heroku Toolbelt](https://toolbelt.heroku.com/), then:
 ### Clone repository
-`git clone https://github.com/Kylmakalle/heroku-telegram-bot.git`
+`git clone https://github.com/rchsmohsin/the-phoenix-bot.git`
 ### Edit files
 1. Edit [bot.py](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/bot.py) file with your code (whatever bot code you're running)
 2. Edit [requirments.txt](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/requirements.txt) with your code's dependencies (you know when you write "import whatever" at the top of your bot code? yea put the "whatever" into this file, each on a different line.
