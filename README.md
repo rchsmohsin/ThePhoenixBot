@@ -1,8 +1,8 @@
 # Steps to edit this project (for RCHS club members)
-## Edit [bot.py](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/bot.py) with whatever changes you'd like to make.
-## Edit [requirements.txt](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/requirements.txt) if you added any libraries to the python code.
+### 1. Edit [bot.py](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/bot.py) with whatever changes you'd like to make.
+### 2. Edit [requirements.txt](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/requirements.txt) if you added any libraries to the python code.
 At the top of the code there should be some libraries, you'll see `import LIBRARYNAME `. If I were adding one of these, I would go to the requirements file and type in `LIBRARYNAME` on a new line.
-## Propose changes to the files.
+### 3. Propose changes to the files.
 Whenever you're finished with your edits, or along the way, you can press the green button that you'll see at the bottom that says "Propose Changes" or something like that. When you do that, it should create a separate branch for you. You can then make a pull request to merge your branch with the `master` branch. That request will have to be approved by me or another admin. 
 
 
