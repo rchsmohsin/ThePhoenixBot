@@ -1,7 +1,16 @@
+# Steps to edit this project (for RCHS club members)
+## Edit [bot.py](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/bot.py) with whatever changes you'd like to make.
+## Edit [requirements.txt](https://github.com/rchsmohsin/the-phoenix-bot/blob/master/requirements.txt) if you added any libraries to the python code.
+At the top of the code there should be some libraries, you'll see `import LIBRARYNAME `. If I were adding one of these, I would go to the requirements file and type in `LIBRARYNAME` on a new line.
+## Propose changes to the files.
+Whenever you're finished with your edits, or along the way, you can press the green button that you'll see at the bottom that says "Propose Changes" or something like that. When you do that, it should create a separate branch for you. You can then make a pull request to merge your branch with the `master` branch. That request will have to be approved by me or another admin. 
+
+
 # Hosting telegram bot on [Heroku](https://heroku.com) for free.
 Easy way to host your python telegram bot on Heroku
 Make an account on here if you'd like to host a bot yourself.
 
+# Steps to Create Your Own Bot
 ## Deploying via [Heroku Toolbelt](https://toolbelt.heroku.com/) (CLI)
 Install [Heroku Toolbelt](https://toolbelt.heroku.com/), then:
 ### Clone repository
@@ -27,6 +36,7 @@ heroku ps:scale bot=1 # start bot dyno
 heroku logs --tail # If for some reason it’s not working, check the logs
 heroku ps:stop bot #stop bot dyno
 ```
+
 
 ### More about
 - https://devcenter.heroku.com/articles/dynos
