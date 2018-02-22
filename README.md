@@ -32,7 +32,7 @@ git push heroku master # deploy app to heroku
 ```
 If this isn't successful, STOP and figure out what's wrong. It's probably in the "Edit files" category of this guide.
 ```
-heroku ps:scale bot=1 # start bot dyno
+heroku ps:scale APPNAME=1 # start bot dyno
 heroku logs --tail # If for some reason it’s not working, check the logs
 heroku ps:stop bot #stop bot dyno
 ```
