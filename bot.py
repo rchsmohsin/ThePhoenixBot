@@ -14,7 +14,7 @@ def meme(bot, update):
   update.message.reply_text("CONK>BEPIS")
   
 def sleep(bot, update):
-  photo_file = blob:https://web.telegram.org/e0966930-8234-48da-b587-7947e6fca4c6
+  photo_file = https://media-exp2.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAiUAAAAJGVhYTQ5ZGQ3LTcyNzgtNDdkMS1hNDBjLTI4ZjEzNTRmNTlhNQ.jpg
   update.message.reply_photo(photo_file)
   
 #def convert_uppercase(bot, update):
