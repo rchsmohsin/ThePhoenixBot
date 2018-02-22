@@ -15,6 +15,8 @@ def meme(bot, update):
   
 def convert_uppercase(bot, update):
   update.message.reply_text(update.message.text.upper())
+def memes(bot,update):
+  update.message.reply_text(update.message.reply_text("CONK>BEPIS"))
 
 def main():
   # Create Updater object and attach dispatcher to it
