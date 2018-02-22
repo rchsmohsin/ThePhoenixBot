@@ -9,7 +9,10 @@ def dank(bot, update):
   
 def hot(bot, update):
   update.message.reply_text("man's not hot")
-
+  
+def meme(bot, update):
+  update.message.reply_text("CONK>BEPIS")
+  
 def convert_uppercase(bot, update):
   update.message.reply_text(update.message.text.upper())
 
@@ -24,12 +27,14 @@ def main():
   start_handler = CommandHandler('start',start)
   dank_handler = CommandHandler('dank',dank)
   hot_handler = CommandHandler ('hot',hot)
+  meme_handler = CommandHandler('meme',meme)
   
   upper_case = MessageHandler(Filters.text, convert_uppercase)
   dispatcher.add_handler(start_handler)
   dispatcher.add_handler(upper_case)
   dispatcher.add_handler(dank_handler)
   dispatcher.add_handler(hot_handler)
+  dispatcher.add_handler(meme_handler)
   
   # Start the bot
   updater.start_polling()
