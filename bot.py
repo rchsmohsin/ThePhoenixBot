@@ -18,7 +18,10 @@ def meorg(bot, update):
   
 def convert_uppercase(bot, update):
   update.message.reply_text(update.message.text.upper())
-
+def photocomment(bot, update):
+  update.message.reply_text("nice photo bro")
+  
+  
 def main():
   # Create Updater object and attach dispatcher to it
   updater = Updater("547118601:AAHcbiwDzTOOtITcr7p5ITdZWTfAzOS0Z8Y")
@@ -34,13 +37,15 @@ def main():
   meorg_handler = CommandHandler('meorg',meorg)
   
   upper_case = MessageHandler(Filters.text, convert_uppercase)
+  photo_filter = MessageHandler(Filters.photo, photocomment)
+  
   dispatcher.add_handler(start_handler)
   dispatcher.add_handler(upper_case)
   dispatcher.add_handler(dank_handler)
   dispatcher.add_handler(hot_handler)
   dispatcher.add_handler(meme_handler)
   dispatcher.add_handler(meorg_handler)
-
+  dispatcher.add_handler(photo_filter)
   
   # Start the bot
   updater.start_polling()
