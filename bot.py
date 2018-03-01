@@ -16,7 +16,7 @@ def meme(bot, update):
 def meorg(bot, update):
   update.message.reply_text("beft!!!!!!!")
   
-def convert_uppercase(bot, update):
+def defreply(bot, update):
   update.message.reply_text(update.message.text())
 def photocomment(bot, update):
   update.message.reply_text("nice photo bro")
@@ -36,7 +36,7 @@ def main():
   meme_handler = CommandHandler('meme',meme)
   meorg_handler = CommandHandler('meorg',meorg)
   
-  upper_case = MessageHandler(Filters.text, convert_uppercase)
+  upper_case = MessageHandler(Filters.text, defreply)
   photo_filter = MessageHandler(Filters.photo, photocomment)
   
   dispatcher.add_handler(start_handler)
