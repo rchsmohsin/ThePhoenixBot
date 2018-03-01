@@ -17,7 +17,8 @@ def meorg(bot, update):
   update.message.reply_text("beft!!!!!!!")
   
 def defreply(bot, update):
-  update.message.reply_text()
+  update.message.reply_text(update.message.text.upper())
+  
 def photocomment(bot, update):
   update.message.reply_text("nice photo bro")
   
