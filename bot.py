@@ -17,7 +17,7 @@ def meorg(bot, update):
   update.message.reply_text("beft!!!!!!!")
   
 def convert_uppercase(bot, update):
-  update.message.reply_text(update.message.text.upper())
+  update.message.reply_text(update.message.text())
 def photocomment(bot, update):
   update.message.reply_text("nice photo bro")
   
