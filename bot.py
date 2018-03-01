@@ -8,7 +8,7 @@ def dank(bot, update):
   update.message.reply_text("When you dank so hard but you don't succeed")
   
 def hot(bot, update):
-  send_message("man's not hot")
+  update.message.reply_text("man's not hot")
   
 def meme(bot, update):
   update.message.reply_text("CONK>BEPIS")
